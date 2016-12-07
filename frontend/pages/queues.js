@@ -21,6 +21,9 @@ export default class QueuesPage extends Component {
     return (
       <div className="ui container">
         <div className="ui very padded stackable grid">
+          <div className="sixteen wide column">
+            <img className="ui fluid image" src="banner.png" alt="Banner" />
+          </div>
           <div className="four wide column">
             <h1 className="ui header">Stations</h1>
             <div className="ui vertical menu">
