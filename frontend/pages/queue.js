@@ -117,6 +117,7 @@ export default class QueuePage extends Component {
           <div className="field">
             <label>Phone Number</label>
             <MaskedInput
+              type="tel"
               mask="(111) 111-1111"
               name="phone"
               placeholder="(123) 456-7890"
