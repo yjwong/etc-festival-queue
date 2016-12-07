@@ -12,7 +12,7 @@ export default class QueuesPage extends Component {
     const queues = await axios.get('/api/queues');
     this.setState(
       Object.assign({}, this.state, {
-        queues: queues.data.sort()
+        queues: queues.data.sort((a, b) => a.name > b.name)
       })
     );
   }
