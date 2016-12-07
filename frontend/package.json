@@ -1,0 +1,25 @@
+{
+  "name": "etc-festival-queue-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for queue system for ETC Festival 2016",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wong Yong Jie <yjwong92@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "jsx-control-statements": "^3.1.5",
+    "webpack": "^1.13.3"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react-maskedinput": "^3.3.3"
+  }
+}

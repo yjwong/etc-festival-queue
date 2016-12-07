@@ -1,0 +1,33 @@
+express:
+  host: 'localhost'
+  port: 8080
+  morgan:
+    format: 'dev'
+
+services:
+  - sequelize
+  - umzug
+  - kue
+  - twilio
+  - twilio-lookups
+
+sequelize:
+  options:
+    dialect: 'sqlite'
+    storage: './data/etc-festival-queue.db'
+
+twilio:
+  sid:
+  authToken:
+  number:
+
+kue:
+  redis:
+    host: '172.17.0.2'
+    port: 6379
+
+umzug:
+  storageOptions:
+    path: './data/etc-festival-queue-migrations.json'
+  migrations:
+    path: './migrations'
