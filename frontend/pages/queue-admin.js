@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import moment from 'moment';
 
 export default class QueueAdminPage extends Component {
   constructor(props) {
@@ -47,7 +48,7 @@ export default class QueueAdminPage extends Component {
         <If condition={this.state.waiters.length > 0}>
           <ul className="ui list">
             <For each="item" of={this.state.waiters}>
-              <li key={item.id}>{item.phone}</li>
+              <li key={item.id}>{item.phone} ({moment(item.createdAt).fromNow()})</li>
             </For>
           </ul>
         </If>
